@@ -410,7 +410,7 @@ if predict_button:
             
             with st.expander("📊 View Data Used"):
                 if not similar_cars.empty:
-                    st.dataframe(similar_cars[['brand_model', 'year', 'mileage', 'transmission', 'price', 'fuel',"emission_class"]], use_container_width=True, hide_index=True)
+                    st.dataframe(similar_cars[['brand_model', 'year', 'mileage', 'transmission','link', 'price', 'fuel',"emission_class"]], use_container_width=True, hide_index=True)
                 else:
                     st.write("No matching data.")
 
